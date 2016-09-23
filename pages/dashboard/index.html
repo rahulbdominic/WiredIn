@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>WiredIN</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+
+		<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../css/index.css" rel="stylesheet" type="text/css" />
+		<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../css/styles.css" rel="stylesheet" type="text/css" />
+		<link href="../../css/custom.css" rel="stylesheet" type="text/css" />
+    </head>
+	<body style="background-image:url(img/gplaypattern.png)">
+		
+		<!-- Header -->
+		<header class="header">
+			<!-- Header Logo -->
+			<a href="index.html" class="logo"><img src="../../img/Header.png" style="margin-top:-1px"/></a>
+		
+			<!-- Navbar -->
+			<nav class="navbar navbar-static-top" role="navigation" style="background-color:white;">
+                
+				<!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button" style="margin-top:18px;">
+                    <span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar" style="background-color:#333333;"></span>
+					<span class="icon-bar" style="background-color:#333333;"></span>
+					<span class="icon-bar" style="background-color:#333333;"></span>
+				</a>
+				<div id="logout" class="btn btn-info pull-right" style="margin-right:30px; margin-top:18px;">Log Out</div>
+			</nav>
+		</header>
+		
+		<!-- Main Canvas -->
+        <div id="mainCanvas" class="wrapper row-offcanvas row-offcanvas-left">
+			
+			<!-- Sidebar -->
+			<aside class="left-side sidebar-offcanvas" style="background-color:#009EDA">
+				<section class="sidebar">
+					<div class="user-panel" style="margin-top:40px;">
+						<div class="pull-left image">
+							<img class="img-circle" src="../../img/Badge-WiredIN.png" alt="User Image"/>
+						</div>
+						<div class="pull-left info"style="color:rgba(230,230,230,1)">
+							<p id="nameBox">Hello Rahul</p>
+<a href="#"style="color:rgba(230,230,230,1)"><i class="fa fa-circle text-success"></i> Online</a>
+						</div>
+					</div>
+
+					<form action="#" method="get" class="sidebar-form">
+                        <div class="input-group" style="height:25px">
+                        </div>
+                    </form>
+					
+					<ul class="sidebar-menu">
+						<li class="l-active">
+							<a id="a_dashboard">
+								<i class="fa fa-dashboard"></i>
+								<span>Dashboard</span>
+							</a>
+						</li>
+						
+						<li>
+							<a id="a_homework">
+								<i class="fa fa-book"></i>
+								<span>Homework</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+						</li>
+						
+						
+						<li>
+							<a id="a_assig">
+								<i class="fa fa-pencil-square"></i>
+								<span>Assignments</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+						</li>
+						
+						
+						<li>
+							<a id="a_exams">
+								<i class="fa fa-file-text-o"></i>
+								<span>Examinations</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+						</li>
+						
+						
+						<li>
+							<a id="a_timet">
+								<i class="fa fa-calendar"></i>
+								<span>Time Table</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+						</li>
+						
+						
+						<li>
+							<a id="a_notif">
+								<i class="fa fa-bell"></i>
+								<span>Notifications</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+						</li>
+						
+						
+						<li>
+							<a id="a_settings">
+								<i class="fa fa-gear"></i>
+								<span>Settings</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+						</li>
+					</ul>
+				</section>
+			</aside>
+			<label id="status_label" style="margin:30px; font-size:22px; width:100%; font-weight:normal; text-align:center;display:none;"><i class="fa fa-angle-down pull-right"></i><span>Select subjects are below 5. You can select more subjects in settings.</span></label>
+			<!-- Main Content -->
+			<aside class="right-side">
+				<!-- Header -->
+				<section class="content-header">
+					<h1>&nbsp;&nbsp; <i class="fa fa-dashboard"></i> &nbsp; Dashboard</h1>
+				</section>
+				
+				<section class="sub-heading" style="margin-top:30px">
+					<h1><i class="fa fa-book"></i> &nbsp;&nbsp; Homework<i class="fa fa-angle-down pull-right"></i></h1>
+				</section>
+				
+				<div class="row">
+					<section id="homework_section" class="col-xs-12 connectedSortable" style="padding:30px">
+						<label id="homework_label" style="font-size:22px; width:100%; font-weight:normal;">No homework!</label>
+					</section>
+				</div>
+				
+				<section class="sub-heading" style="margin-top:30px">
+					<h1><i class="fa fa-pencil-square"></i> &nbsp;&nbsp; Assignments <i class="fa fa-angle-down pull-right"></i></h1>
+				</section>
+				
+				<div class="row">
+					<section id="assignments_section" class="col-xs-12 connectedSortable" style="padding:30px">
+						<label id="assign_label" style="font-size:22px; width:100%; font-weight:normal;">No assignments!</label>
+					</section>
+				</div>
+				
+				<section class="sub-heading" style="margin-top:30px">
+					<h1><i class="fa fa-file-text-o"></i> &nbsp;&nbsp; Examinations & Tests<i class="fa fa-angle-down pull-right"></i></h1>
+				</section>
+				
+				<div class="row">
+					<section id="examinations_section" class="col-xs-12 connectedSortable" style="padding:30px">
+						<label id="exam_label" style="font-size:22px; width:100%; font-weight:normal;">No examinations!</label>
+					</section>
+				</div>
+				
+				<section class="sub-heading" style="margin-top:30px">
+					<h1><i class="fa fa-calendar"></i> &nbsp;&nbsp; Notifications <i class="fa fa-angle-down pull-right"></i></h1>
+				</section>
+				
+				<section id="notif_section" class="col-xs-12 connectedSortable" style="padding:30px; margin-bottom:100px">				
+					<label id="notif_label" style="font-size:22px; width:100%; font-weight:normal; display:none;">No notifications!</label>
+				</section>
+			</aside>
+		</div>		
+		
+		<script src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js'></script>
+        <script src='http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.1.0.min.js'></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../js/dashboard.js" type="text/javascript"></script>  
+	</body>
+</html>

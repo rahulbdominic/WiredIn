@@ -1,0 +1,178 @@
+body
+{
+	background-image: url(../img/gplaypattern.png);
+}
+
+a 
+{
+	transition: color 0.5s ease;
+	color:white; !important
+}
+
+a:hover 
+{
+	color: #1abc9c;
+	
+}
+
+.l-active
+{
+	background-color: #4ECDC4;
+  	transition: color 0.5s ease;
+}
+
+a.l-active:hover 
+{
+	color: #000000; !important	
+}
+
+.img-circle 
+{
+    border-radius: 50%;
+	margin-left: auto; !important
+	margin-right: auto; !important
+}
+
+.image-container
+{
+	text-align: center;
+	padding-top: 100px;
+}
+
+.notification-row
+{
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: auto;
+	padding: 10px 20px;
+	background-color: rgba(240,240,240,1);
+	border: 1px solid rgba(200,200,200,1);
+	margin: 2.5px;
+}
+
+.institute-name
+{
+	text-align: center;
+}
+
+.list-content
+{
+	text-align: center;
+}
+
+.notification-row > h1
+{
+	font-size: 18px;
+}
+
+.notification-row > small
+{
+	font-size: 16px;
+}
+
+.notification-row > .notif-date
+{
+	padding-right: 10px;
+}
+
+.settings-row
+{
+	width: 400px;
+	background-color: rgba(250,250,250,1);
+	border-bottom: 3px solid rgba(220,220,220,1);
+	border-right: 1px solid rgba(220,220,220,1);
+	border-left: 1px solid rgba(220,220,220,1);
+	border-top: 1px solid rgba(220,220,220,1);
+	margin: 2.5px;
+	padding:10px;
+}
+
+.login-box
+{
+	width: 350px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+}
+
+.login-cont
+{
+	padding:10px;
+	border-radius: 20px;
+	width: 370px;
+	margin-top:50px; 
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0,0,0,0.35); !important
+}
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+
+
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+}
+
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login-title
+{
+    color: #555;
+    font-size: 34px;
+    font-size: 34px;
+	margin-left: 140px;
+	margin-right: auto;
+	padding-top: 50px;
+    font-weight: 200;
+    display: block;
+}
+
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.need-help
+{
+    display: block;
+    margin-top: 10px;
+}
